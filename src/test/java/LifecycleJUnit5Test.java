@@ -14,6 +14,7 @@ public class LifecycleJUnit5Test {
     void testOne(){
         System.out.println("TEST 1");
     }
+    @Disabled
     @Test
     void testTwo(){
         System.out.println("TEST 2");

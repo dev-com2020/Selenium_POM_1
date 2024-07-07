@@ -1,4 +1,3 @@
-import java.util.Locale;
 
 public enum Os {
     WINDOWS, MAC, LINUX, OTHER;

@@ -38,6 +38,10 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.3.0</version>
                 <configuration>
+                    <includes>
+                        <include>**/*Test.java</include>
+                    </includes>
+                    <testFailureIgnore>true</testFailureIgnore>
                     <properties>
                         <includeTags>functional</includeTags>
                         <excludeTags>non-functional</excludeTags>

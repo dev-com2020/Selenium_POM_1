@@ -12,7 +12,7 @@ public class ParametrizedTest {
 //            "2,goodbye"
 //
 //    })
-    @CsvFileSource(resources = "/test-data.csv", numLinesToSkip = 0)
+    @CsvFileSource(resources = "/MOCK_DATA.csv", numLinesToSkip = 0)
 
     public void test(Integer input1, String input2) {
         System.out.println(input1 + " " + input2);

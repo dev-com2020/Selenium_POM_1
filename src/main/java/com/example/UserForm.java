@@ -29,7 +29,7 @@ public class UserForm {
 
     @Override
     public String toString() {
-        return "UserForm [username=" + username + ", password" + password + "]";
+        return "UserForm [username=" + username + ", password=" + password + "]";
     }
 
 }

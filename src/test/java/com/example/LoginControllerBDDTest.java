@@ -8,6 +8,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 
 import static org.junit.Assert.assertEquals;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 
 @ExtendWith(MockitoExtension.class)
@@ -30,5 +31,16 @@ class LoginControllerBDDTest {
     void testLoginOk(){
         given(loginService.login(userForm)).willReturn(true);
         assertEquals("OK!", loginController.login(userForm));
+    }
+
+    @Test
+    void testLoginError(){
+        assertEquals("ERROR!", loginController.login(null));
+    }
+
+    @Test
+    void testLoginException(){
+        given(loginService.login(any(UserForm.class))).willThrow(IllegalArgumentException.class);
+        assertEquals("ERROR!", loginController.login(userForm));
     }
 }

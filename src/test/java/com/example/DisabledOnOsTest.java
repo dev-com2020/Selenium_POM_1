@@ -1,7 +1,9 @@
+package com.example;
+
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.condition.OS.LINUX;
-import static org.junit.jupiter.api.condition.OS.WINDOWS;
+import static com.example.Os.LINUX;
+import static com.example.Os.WINDOWS;
 
 
 public class DisabledOnOsTest {

@@ -1,3 +1,5 @@
+package com.example;
+
 import org.junit.jupiter.api.*;
 
 public class LifecycleJUnit5Test {

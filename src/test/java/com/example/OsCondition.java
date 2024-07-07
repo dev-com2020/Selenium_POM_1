@@ -1,3 +1,5 @@
+package com.example;
+
 import org.junit.jupiter.api.condition.DisabledOnOs;
 import org.junit.jupiter.api.extension.ConditionEvaluationResult;
 import org.junit.jupiter.api.extension.ExecutionCondition;
@@ -13,7 +15,7 @@ public class OsCondition implements ExecutionCondition {
     @Override
     public ConditionEvaluationResult evaluateExecutionCondition(ExtensionContext context) {
         Optional<AnnotatedElement> element = context.getElement();
-        ConditionEvaluationResult out = ConditionEvaluationResult.enabled("@DisabledOnOs is not present");
+        ConditionEvaluationResult out = ConditionEvaluationResult.enabled("@com.example.DisabledOnOs is not present");
         Optional<DisabledOnOs> disabledOnOs = AnnotationUtils.findAnnotation(element, DisabledOnOs.class);
 
         if (disabledOnOs.isPresent()) {

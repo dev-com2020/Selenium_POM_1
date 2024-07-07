@@ -1,3 +1,5 @@
+package com.example;
+
 import org.junit.jupiter.api.*;
 
 import java.util.HashMap;

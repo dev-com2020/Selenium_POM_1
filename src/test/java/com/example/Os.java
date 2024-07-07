@@ -1,3 +1,4 @@
+package com.example;
 
 public enum Os {
     WINDOWS, MAC, LINUX, OTHER;

@@ -1,5 +1,5 @@
+package com.example;
 
-import org.junit.jupiter.api.condition.OS;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.lang.annotation.ElementType;
@@ -11,5 +11,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @ExtendWith(OsCondition.class)
 public @interface DisabledOnOs {
-    OS[] value();
+    Os[] value();
 }
